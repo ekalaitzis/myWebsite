@@ -1,0 +1,126 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #e0e0e0, #a0a0a0);
+    color: #333;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.navbar-brand {
+    font-size: 1.5em;
+}
+
+h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.lead {
+    font-size: 1.25em;
+    margin-bottom: 20px;
+}
+
+img {
+    border: 5px solid #ddd;
+    padding: 5px;
+}
+
+.bio-box {
+    background-color: #2b2b2b;
+    color: #ddd;
+    border-radius: 15px; /* Rounded edges */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 900px; /* Static width */
+    width: 100%;
+    height: 700px; /* Static height */
+}
+
+.bio-box h1,
+.bio-box .lead,
+.bio-box p,
+.bio-box a {
+    color: #fff;
+}
+
+footer {
+    background-color: #222;
+    color: #aaa;
+    padding: 15px 0;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+}
+
+.container {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Custom Tab Colors */
+.nav-pills .nav-link {
+    color: #ddd; /* Tab text color */
+    background-color: transparent; /* Tab background color */
+    border-radius: 10px; /* Rounded edges for tabs */}
+
+.nav-pills .nav-link.active {
+    color: #fff; /* Active tab text color */
+    background-color: #343a40; /* Active tab background color */
+}
+
+.nav-pills .nav-link:hover {
+    color: #fff; /* Tab text color on hover */
+    background-color: #485158; /* Tab background color on hover */
+}
+
+#social ul.list-unstyled {
+    padding: 0; /* Remove default padding */
+    margin: 0; /* Remove default margin */
+}
+
+#social ul.list-unstyled li {
+    margin-bottom: 15px; /* Add space between list items */
+    font-size: 1.1em; /* Increase font size slightly */
+}
+
+#social ul.list-unstyled li a {
+    display: inline-block; /* Ensure proper spacing */
+    padding: 5px 0; /* Add padding to links */
+    color: #fff; /* Ensure the link color matches the rest of your site's theme */
+    text-decoration: none; /* Remove underline */
+}
+
+#social ul.list-unstyled li a:hover {
+    text-decoration: underline; /* Underline on hover for better UX */
+}
+
+/* Style for the technologies list */
+.tech-list {
+    padding: 0; /* Remove default padding */
+    margin: 20px 0; /* Add some margin for spacing */
+    list-style-type: none; /* Remove default list style */
+}
+
+.tech-list li {
+    margin-bottom: 10px; /* Add space between list items */
+    font-size: 1em; /* Increase font size slightly */
+    color: #fff; /* Match the text color to your theme */
+}
+
+/* Ensure the background and color matches your existing styles */
+.tab-pane {
+    background-color: #2b2b2b; /* Background color matching the .bio-box */
+    color: #ddd; /* Text color matching the .bio-box */
+    border-radius: 15px; /* Rounded edges */
+    padding: 20px; /* Padding for inner spacing */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Box shadow for a subtle effect */
+}
+img {
+    border: none; /* Remove the border */
+    border-radius: 20%; /* Make the image round */
+    padding: 0; /* Remove padding */
+    width: 200px; /* Adjust width as needed */
+    height: 200px; /* Adjust height as needed */
+}

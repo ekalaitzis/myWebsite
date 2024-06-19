@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Developer Bio</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link href="style.css" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">eKalaitzis</a>
+    </nav>
+
+    <div class="container d-flex align-items-center justify-content-center flex-column">
+        <div class="row justify-content-center w-100">
+            <div class="col-md-10">
+                <div class="bio-box p-4">
+                    <div class="row">
+                        <div class="col-md-4 text-center">
+                            <img src="profile.png" class="img-fluid rounded-circle mb-4" alt="Profile Picture">
+                            <ul class="nav flex-column nav-pills mt-3" id="myTab" role="tablist">
+                                <li class="nav-item">
+                                    <a class="nav-link active" id="bio-tab" data-toggle="tab" href="#bio" role="tab" aria-controls="bio" aria-selected="true">About me</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" id="social-tab" data-toggle="tab" href="#social" role="tab" aria-controls="social" aria-selected="false">Links</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" id="projects-tab" data-toggle="tab" href="#projects" role="tab" aria-controls="projects" aria-selected="false">Projects</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-md-8">
+                            <div class="tab-content" id="myTabContent">
+                                <div class="tab-pane fade show active" id="bio" role="tabpanel" aria-labelledby="bio-tab">
+                                    <h1 class="display-4">Emmanouil Kalaitzis</h1>
+                                    <div class="bio">
+                                        <h2>Back-end Developer</h2>
+                                        <p>
+                                            My professional journey started in the world of culinary arts, where I worked as a Chef in various hotels and restaurants. My career in this field is anchored by formal degrees in culinary and pastry arts, showcasing a passion for learning new things.
+                                        </p>
+                                        <p>
+                                            In a significant career shift from February 2023, I started exploring the world of programming. Starting with the Helsinki Java MOOC, I not only completed the course but also earned a certification, signifying my commitment to this new field.
+                                        </p>
+                                        <p>
+                                            My journey in tech didn't stop there. I've since mastered tools and frameworks like GitHub, Spring/Spring Boot, and SQL, demonstrating my adaptability and eagerness to learn. Currently, I am channeling my culinary background into the development of a food delivery application.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade" id="social" role="tabpanel" aria-labelledby="social-tab">
+                                    <ul class="list-unstyled">
+                                        <li>Email: <a href="mailto:emmanouil@kalaitzis.pro">emmanouil@kalaitzis.pro</a></li>
+                                        <li>GitHub: <a href="https://github.com/ekalaitzis" target="_blank">github.com/ekalaitzis</a></li>
+                                        <li>LinkedIn: <a href="https://www.linkedin.com/in/emmanouilk/" target="_blank">linkedin.com/in/emmanouilk</a></li>
+                                    </ul>
+                                </div>
+                                <div class="tab-pane fade" id="projects" role="tabpanel" aria-labelledby="projects-tab">
+                                    <h1 class="display-4">ZapBites</h1>
+                                    <h2>Technologies Used</h2>
+                                    <ul class="list-unstyled tech-list">
+                                        <li>- Java 21</li>
+                                        <li>- Spring Boot 3.2.1</li>
+                                        <li>- Spring Data JPA: For simplified data access and persistence.</li>
+                                        <li>- Hibernate: Object-Relational Mapping (ORM) framework.</li>
+                                        <li>- PostgreSQL: Robust and scalable open-source database.</li>
+                                        <li>- Supabase: Realtime backend with Postgres, authentication, and storage.</li>
+                                        <li>- Spring Security: Secure authentication and access control.</li>
+                                        <li>- JUnit: Unit testing framework.</li>
+                                        <li>- H2: In-memory database for testing purposes</li>
+                                        <li>- Thymeleaf: Java template engine for web views.</li>
+                                        <li>- Springdoc OpenAPI: API documentation using OpenAPI specifications.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="bg-dark text-white text-center py-3">
+        &copy; 2024 Your Name. All rights reserved.
+    </footer>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
