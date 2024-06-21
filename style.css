@@ -1,6 +1,6 @@
 body {
     font-family: 'Arial', sans-serif;
-    background: linear-gradient(135deg, #e0e0e0, #a0a0a0);
+    background: linear-gradient(135deg, hsl(210, 48%, 67%), #3a3535);
     color: #333;
     min-height: 100vh;
     display: flex;
@@ -22,20 +22,25 @@ h1 {
 }
 
 img {
-    border: 5px solid #ddd;
-    padding: 5px;
+    border-radius: 20%; /* Make the image round */
+    width: 50%; /* Adjust the size */
+    max-width: 100px; /* Further restrict the maximum width */
+    height: auto; /* Maintain aspect ratio */
 }
 
 .bio-box {
     background-color: #2b2b2b;
     color: #ddd;
-    border-radius: 15px; /* Rounded edges */
+    border-radius: 15px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    max-width: 900px; /* Static width */
+    max-width: 900px;
     width: 100%;
-    height: 700px; /* Static height */
+    padding: 20px;
+    min-height: 700px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; /* Changed from center to flex-start */
 }
-
 .bio-box h1,
 .bio-box .lead,
 .bio-box p,
@@ -47,9 +52,7 @@ footer {
     background-color: #222;
     color: #aaa;
     padding: 15px 0;
-    position: absolute;
-    width: 100%;
-    bottom: 0;
+    text-align: center;
 }
 
 .container {
@@ -57,70 +60,105 @@ footer {
     display: flex;
     align-items: center;
     justify-content: center;
+    padding: 10px;
 }
 
 /* Custom Tab Colors */
 .nav-pills .nav-link {
-    color: #ddd; /* Tab text color */
-    background-color: transparent; /* Tab background color */
-    border-radius: 10px; /* Rounded edges for tabs */}
+    color: #ddd;
+    background-color: transparent;
+    border-radius: 10px;
+}
 
 .nav-pills .nav-link.active {
-    color: #fff; /* Active tab text color */
-    background-color: #343a40; /* Active tab background color */
+    color: #fff;
+    background-color: #343a40;
 }
 
 .nav-pills .nav-link:hover {
-    color: #fff; /* Tab text color on hover */
-    background-color: #485158; /* Tab background color on hover */
+    color: #fff;
+    background-color: #485158;
 }
 
 #social ul.list-unstyled {
-    padding: 0; /* Remove default padding */
-    margin: 0; /* Remove default margin */
+    padding: 0;
+    margin: 0;
 }
 
 #social ul.list-unstyled li {
-    margin-bottom: 15px; /* Add space between list items */
-    font-size: 1.1em; /* Increase font size slightly */
+    margin-bottom: 15px;
+    font-size: 1.1em;
 }
 
 #social ul.list-unstyled li a {
-    display: inline-block; /* Ensure proper spacing */
-    padding: 5px 0; /* Add padding to links */
-    color: #fff; /* Ensure the link color matches the rest of your site's theme */
-    text-decoration: none; /* Remove underline */
+    display: inline-block;
+    padding: 5px 0;
+    color: #fff;
+    text-decoration: none;
 }
 
 #social ul.list-unstyled li a:hover {
-    text-decoration: underline; /* Underline on hover for better UX */
+    text-decoration: underline;
 }
 
 /* Style for the technologies list */
 .tech-list {
-    padding: 0; /* Remove default padding */
-    margin: 20px 0; /* Add some margin for spacing */
-    list-style-type: none; /* Remove default list style */
+    padding: 0;
+    margin: 20px 0;
+    list-style-type: none;
 }
 
 .tech-list li {
-    margin-bottom: 10px; /* Add space between list items */
-    font-size: 1em; /* Increase font size slightly */
-    color: #fff; /* Match the text color to your theme */
+    margin-bottom: 10px;
+    font-size: 1em;
+    color: #fff;
 }
 
 /* Ensure the background and color matches your existing styles */
 .tab-pane {
-    background-color: #2b2b2b; /* Background color matching the .bio-box */
-    color: #ddd; /* Text color matching the .bio-box */
-    border-radius: 15px; /* Rounded edges */
-    padding: 20px; /* Padding for inner spacing */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Box shadow for a subtle effect */
+    background-color: #2b2b2b;
+    color: #ddd;
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
-img {
-    border: none; /* Remove the border */
-    border-radius: 20%; /* Make the image round */
-    padding: 0; /* Remove padding */
-    width: 200px; /* Adjust width as needed */
-    height: 200px; /* Adjust height as needed */
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .fixed-sidebar {
+        position: static;
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .content-area {
+        margin-left: 0;
+    }
+
+    .bio-box {
+        padding: 10px;
+    }
+
+    .row {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .col-md-4,
+    .col-md-8 {
+        width: 100%;
+        max-width: 100%;
+        padding: 0;
+    }
+}
+.fixed-sidebar {
+    position: fixed;
+    top: 80px; /* Adjust based on your navbar height */
+    left: 20px;
+    width: 200px; /* Adjust as needed */
+    z-index: 1000;
+}
+
+.content-area {
+    margin-left: 220px; /* Width of fixed-sidebar + some padding */
 }
