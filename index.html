@@ -3,11 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Emmanouil Kalaitzis - Back-end Developer with a background in culinary arts. Learn more about my journey, projects, and connect with me.">
+    <meta name="keywords" content="Emmanouil Kalaitzis, Back-end Developer, Java, Spring Boot, Projects">
     <title>Developer Bio</title>
     <!-- Bootstrap CSS -->
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <!-- Custom CSS -->
     <link href="style.css" rel="stylesheet">
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 </head>
 <body>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
@@ -20,7 +24,7 @@
                 <div class="bio-box p-4">
                     <div class="row">
                         <div class="col-md-4 text-center fixed-sidebar">
-                            <img src="profile.png" class="img-fluid rounded-circle mb-4" alt="Profile Picture">
+                            <img src="profile.png" class="img-fluid rounded-circle mb-4" alt="Profile Picture of Emmanouil Kalaitzis">
                             <ul class="nav flex-column nav-pills mt-3" id="myTab" role="tablist">
                                 <li class="nav-item">
                                     <a class="nav-link active" id="bio-tab" data-toggle="tab" href="#bio" role="tab" aria-controls="bio" aria-selected="true">About me</a>
@@ -30,6 +34,9 @@
                                 </li>
                                 <li class="nav-item">
                                     <a class="nav-link" id="projects-tab" data-toggle="tab" href="#projects" role="tab" aria-controls="projects" aria-selected="false">Projects</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false">Contact</a>
                                 </li>
                             </ul>
                         </div>
@@ -52,9 +59,9 @@
                                 </div>
                                 <div class="tab-pane fade" id="social" role="tabpanel" aria-labelledby="social-tab">
                                     <ul class="list-unstyled">
-                                        <li>Email: <a href="mailto:emmanouil@kalaitzis.pro">emmanouil@kalaitzis.pro</a></li>
-                                        <li>GitHub: <a href="https://github.com/ekalaitzis" target="_blank">github.com/ekalaitzis</a></li>
-                                        <li>LinkedIn: <a href="https://www.linkedin.com/in/emmanouilk/" target="_blank">linkedin.com/in/emmanouilk</a></li>
+                                        <li><i class="fas fa-envelope"></i> <a href="mailto:emmanouil@kalaitzis.pro">emmanouil@kalaitzis.pro</a></li>
+                                        <li><i class="fab fa-github"></i> <a href="https://github.com/ekalaitzis" target="_blank"> Github</a></li>
+                                        <li><i class="fab fa-linkedin"></i> <a href="https://www.linkedin.com/in/emmanouilk/" target="_blank"> LinkedIn</a></li>
                                     </ul>
                                 </div>
                                 <div class="tab-pane fade" id="projects" role="tabpanel" aria-labelledby="projects-tab">
@@ -74,6 +81,24 @@
                                         <li>- Springdoc OpenAPI: API documentation using OpenAPI specifications.</li>
                                     </ul>
                                 </div>
+                                <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
+                                    <h1 class="display-4">Contact</h1>
+                                    <form action="mailto:emmanouil@kalaitzis.pro" method="post" enctype="text/plain">
+                                        <div class="form-group">
+                                            <label for="name">Name</label>
+                                            <input type="text" class="form-control" id="name" name="name" required>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="email">Email</label>
+                                            <input type="email" class="form-control" id="email" name="email" required>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="message">Message</label>
+                                            <textarea class="form-control" id="message" name="message" rows="5" required></textarea>
+                                        </div>
+                                        <button type="submit" class="btn btn-primary">Send</button>
+                                    </form>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -87,7 +112,7 @@
     </footer>
 
     <!-- Bootstrap JS and dependencies -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
